@@ -1,0 +1,7 @@
+import math
+
+angulo = float(input('Digite o ângulo: '))
+
+print(f'O cosseno de {angulo:.0f}º é {math.cos(math.radians(angulo)):.2f}')
+print(f'O seno de {angulo:.0f}º é {math.sin(math.radians(angulo)):.2f}')
+print(f'A tangente de {angulo:.0f}º é {math.tan(math.radians(angulo)):.2f}')
