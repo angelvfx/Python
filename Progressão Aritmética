@@ -1,0 +1,39 @@
+inicio = int(input('Digite o inicio da PA: '))
+razao = int(input('Digite a razao da PA: '))
+mensagem = ''
+valor = 0
+i = 0
+term = 0
+termos = 0
+
+while i < 10:
+        mensagem += f'{valor} >> '
+        valor = valor + razao
+        i += 1
+        term += 1
+mensagem += 'Pausa'
+print(f'{mensagem}')
+
+permissao = 0
+
+while permissao == 0:
+
+        termos = int(input('Quantos mais termos você quer ver?: '))
+        
+        if termos == 0:
+                permissao = 1
+        else:
+                i = 0
+                mensagem = ''
+
+                while i < termos:
+                        mensagem += f'{valor} >> '
+                        valor = valor + razao
+                        i += 1
+                        term += 1
+                mensagem += 'Pausa'
+                print(f'{mensagem}')
+        
+
+print('Programa finalizado!')
+print(f'Um total de {term} termos foi calculado.')
