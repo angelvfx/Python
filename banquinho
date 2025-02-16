@@ -1,0 +1,45 @@
+print('=========================')
+print('    Banco do Angel')
+print('=========================')
+
+sacar = int(input('Digite quanto você quer sacar: '))
+
+ced100 = 0
+ced50 = 0
+ced20 = 0
+ced10 = 0
+ced5 = 0
+
+cedula = 0
+
+while True:
+    if sacar >= 100:
+        sacar -= 100
+        ced100 += 1
+    else:
+        if sacar >= 50:
+            sacar -= 50
+            ced50 += 1
+        else:
+            if sacar >= 20:
+                sacar -= 20
+                ced20 += 1
+            else:
+                if sacar >= 10:
+                    sacar -= 10
+                    ced10 += 1
+                else:
+                    if sacar >= 5:
+                        sacar -= 5
+                        ced5 += 1   
+                    else:
+                        print(f'Não deu pra sacar R${sacar}')
+                        break
+
+           
+print('-----------------------------')
+print(f'Cédulas de 100: {ced100} ')
+print(f'Cédulas de 50: {ced50} ')
+print(f'Cédulas de 20: {ced20} ')
+print(f'Cédulas de 10: {ced10} ')
+print(f'Cédulas de 5: {ced5} ')
